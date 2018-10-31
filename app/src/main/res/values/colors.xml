@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="whiteGrey">#f1f1f1</color>
+    <color name="grey">#cccccc</color>
+    <color name="grey_700">#646464</color>
+    <color name="black">#000000</color>
+
+    <color name="sunshine_light_blue">#ff64c2f4</color>
+    <color name="sunshine_blue">#ff1ca8f4</color>
+    <color name="sunshine_dark_blue">#0288D1</color>
+
+    <color name="magenta">#FF00FF</color>
+    <color name="red">#F44336</color>
+    <color name="green">#4CAF50</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="material_grey">#9E9E9E</color>
+    <color name="blue">#2196F3</color>
+
+    <!--Beacons-->
+    <color name="header_color">#1C47C1</color>
+    <color name="url_color">#099F39</color>
+    <color name="description_color">#545454</color>
+    <color name="config_save_url_button">#4285f4</color>
+    <color name="menu_item_text_color">#333333</color>
+    <color name="action_bar_title_text_color">#5A5A5A</color>
+    <color name="action_bar_background_color">#FFFFFF</color>
+    <color name="swipe_refresh_widget_first_color">#70a2d3</color>
+    <color name="swipe_refresh_widget_second_color">#c2c2c2</color>
+</resources>

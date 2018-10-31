@@ -1,0 +1,61 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:defaultValue="lg"
+        android:inputType="text"
+        android:key="User"
+        android:singleLine="true"
+        android:title="Liquid Galaxy connection User" />
+
+    <EditTextPreference
+        android:defaultValue="lqgalaxy"
+        android:inputType="textPassword"
+        android:key="Password"
+        android:password="true"
+        android:singleLine="true"
+        android:title="Liquid Galaxy connection Password" />
+
+    <EditTextPreference
+        android:defaultValue="172.26.17.21"
+        android:digits="0123456789."
+        android:inputType="numberDecimal"
+        android:key="HostName"
+        android:singleLine="true"
+        android:title="Liquid Galaxy connection Host Name (IP)" />
+
+    <EditTextPreference
+        android:defaultValue="22"
+        android:inputType="number"
+        android:key="Port"
+        android:singleLine="true"
+        android:title="Liquid Galaxy connection Port" />
+
+    <EditTextPreference
+        android:defaultValue="lg"
+        android:inputType="textPassword"
+        android:key="AdminPassword"
+        android:password="true"
+        android:singleLine="true"
+        android:title="Administration Password" />
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="pref_kiosk_mode"
+        android:title="Kiosk Mode" />
+
+    <EditTextPreference
+        android:defaultValue="10.33.34.101"
+        android:digits="0123456789."
+        android:inputType="numberDecimal"
+        android:key="ServerIp"
+        android:singleLine="true"
+        android:title="@string/server_ip" />
+
+    <EditTextPreference
+        android:defaultValue="8000"
+        android:inputType="number"
+        android:key="ServerPort"
+        android:singleLine="true"
+        android:title="@string/server_port" />
+
+</PreferenceScreen>

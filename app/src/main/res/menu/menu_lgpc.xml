@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.gsoc.ijosa.liquidgalaxycontroller.com.gsoc.ijosa.liquidgalaxycontroller.LGPC">
+
+    <item
+        android:id="@+id/action_admin"
+        android:title="@string/administration_tools"
+        app:showAsAction="never" />
+    <item android:id="@+id/action_information_help"
+        android:title="@string/help"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_about"
+        android:title="@string/about"
+        app:showAsAction="never" />
+</menu>

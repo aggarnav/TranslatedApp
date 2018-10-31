@@ -1,0 +1,179 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="?android:attr/dividerVertical"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.gsoc.ijosa.liquidgalaxycontroller.com.gsoc.ijosa.liquidgalaxycontroller.CreateItemFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:divider="?android:attr/dividerHorizontal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:divider="?android:attr/dividerVertical"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tourNameinputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp">
+
+            <EditText
+                android:id="@+id/tour_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:hint="@string/name" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/hideInputlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp">
+
+                <Switch
+                    android:id="@+id/switchButtonHide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/visibility"
+                    android:textOff="@string/hidden"
+                    android:textOn="@string/visible" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:divider="?android:attr/dividerVertical"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/poisIntervalInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp">
+            <EditText
+                android:id="@+id/pois_interval"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/global_interval_tour_text"
+                android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/categoryID_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:divider="?android:attr/dividerHorizontal"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+
+                <RelativeLayout
+                    android:id="@+id/fragment_tour_pois"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tour_pois"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:text="@string/tour_pois"
+                    android:textStyle="bold" />
+
+                <ListView
+                    android:id="@+id/tour_pois_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/tour_pois"
+                    android:descendantFocusability="beforeDescendants"
+                    android:divider="@null"
+                    android:scrollbars="vertical" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.15">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/cancel_come_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:gravity="bottom"
+            android:src="@drawable/ic_close_white_24dp"
+            android:text="@string/cancel"
+            app:backgroundTint="@color/red" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/create_tour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="false"
+            android:layout_toEndOf="@+id/cancel_come_back"
+            android:gravity="bottom"
+            android:src="@drawable/ic_check_white_24dp"
+            android:text="@string/create_tour"
+            app:backgroundTint="@color/green" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/update_tour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/cancel_come_back"
+            android:gravity="bottom"
+            android:src="@drawable/ic_check_white_24dp"
+            android:text="@string/update_tour"
+            android:visibility="gone"
+            app:backgroundTint="@color/green" />
+
+    </RelativeLayout>
+</LinearLayout>
